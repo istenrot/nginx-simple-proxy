@@ -3,6 +3,7 @@ FROM centos:7
 ENV PROXY_DEST="127.0.0.1:8080"
 ENV HTTP_BASIC_USER="nginx"
 ENV HTTP_BASIC_PASSWD="proxy"
+ENV PROXY_AUTHORIZATION=""
 
 
 RUN yum -y install "https://packages.exove.com/yum/el7/exove-centos-release.el7.noarch.rpm"
