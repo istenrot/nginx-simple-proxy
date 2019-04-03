@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+envsubst </tmp/nginx.conf.template >/etc/nginx/nginx.conf
+envsubst </tmp/htpasswd.template >/etc/nginx/htpasswd
+
+exec nginx
+
+
